@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> runningSum(vector<int>& nums) {
@@ -11,3 +16,15 @@ public:
         return sumArray;
     }
 };
+
+int main()
+{
+    Solution s;
+    vector<int> mat{1,2,3,4};
+    vector<int> res = s.runningSum(mat);
+    for(int i=0 ; i<mat.size();i++){
+        cout<<'\n'<< res[i];
+    }
+
+    return 0;
+}
